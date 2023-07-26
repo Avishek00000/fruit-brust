@@ -13,10 +13,11 @@
 <body>
     <header>
         <!-- navber -->
-        <nav class=" border-indigo-600">
+        <nav class=" border-indigo-600 pt-24">
             <div class="navbar bg-[#F85559] rounded-3xl justify-between">
                 <div>
-                    <ul class="flex gap-5 text-[#FFF] pl-20">
+                    <ul class="flex gap-5 text-[#FFF] pl-20 pt-10
+                    pb-10">
                         <li>Home</li>
                         <li>About Us</li>
                         <li>Shop</li>
@@ -39,26 +40,26 @@
               </div>
         </nav>
         <!-- banner section -->
-       <div class="w-full pt-32">
+       <div class="w-full pt-24 leading-loose">
         <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
           <div class="hero-overlay bg-opacity-60"></div>
           <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-md">
-              <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
-              <p class="mb-5">We supply highly quality organic products</p>
-              <button class="btn rounded-xl bg-[#F85559]">Shop Now</button>
+            <div class="">
+              <h1 class="mb-5 text-9xl font-bold">Exotic tastes at your <br> doorstep</h1>
+              <p class="mb-5 text-2xl">We supply highly quality organic products</p>
+              <button class="btn rounded-xl bg-[#F85559] text-[#FFFFFF]">Shop Now</button>
             </div>
           </div>
         </div>
-       </div>
+      </div>
           <!-- card section -->
-          <div class="flex justify-between pt-10">
+          <div class="flex justify-between py-32 px-32 leading-9">
             <div>
                 <h2 class="text-3xl font-bold">Deal of the day</h2>
                 <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-            </div>
+              </div>
             <div>
-               <ul class="flex gap-5">
+               <ul class="flex gap-5 leading-10">
                 <li><h2 class="text-3xl font-bold">29  :</h2>
                     <p>Days</p></li>
                 <li><h2 class="text-3xl font-bold">15   :</h2>
@@ -72,7 +73,7 @@
           </div>
     </header>
     <main>
-      <section class="flex gap-6">
+      <section class="flex gap-6 px-10">
          <!-- feature fruit first card  -->
         <div class="w-96 card bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
@@ -92,7 +93,32 @@
                 </svg>
             </div>
             <div class="card-actions">
-             <a href="Details">Details</a>
+              <div class="dropdown dropdown-right">
+                <label tabindex="0" class="btn m-1">Details</label>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <div class="w-96 card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Apples</p>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                            <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
+                            <path d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z" fill="#FBC0A8"/>
+                            <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                            <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                            <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                            <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                          </svg>
+                      </div>
+                      <div class="flex gap-6">
+                        <button class="border border-solid border-[#F85559] py-2 px-6 rounded-md">Close</button>
+                        <button class="bg-[#F85559] py-2 px-6 rounded-md">Buy Now</button>
+                      </div>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -103,7 +129,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">12.90$ - 18.85$</h2>
-            <p>Apples</p>
+            <p>Orange</p>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
                   <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
@@ -115,8 +141,35 @@
                 </svg>
             </div>
             <div class="card-actions">
-             <a href="Details">Details</a>
+              <div class="dropdown dropdown-right">
+                <label tabindex="0" class="btn m-1">Details</label>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <div class="w-96 card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Orange</p>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                            <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
+                            <path d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z" fill="#FBC0A8"/>
+                            <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                            <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                            <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                            <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                          </svg>
+                      </div>
+                      <div class="flex gap-6">
+                        <button class="border border-solid border-[#F85559] py-2 px-6 rounded-md">Close</button>
+                        <button class="bg-[#F85559] py-2 px-6 rounded-md">Buy Now</button>
+                      </div>
+                </ul>
+              </div>
             </div>
+          </div>
+        </div>
           </div>
         </div>
          <!-- feature fruit third card  -->
@@ -126,7 +179,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">12.90$ - 18.85$</h2>
-            <p>Apples</p>
+            <p>Red Dragon</p>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
                   <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
@@ -138,7 +191,35 @@
                 </svg>
             </div>
             <div class="card-actions">
-             <a href="Details">Details</a>
+              <div class="dropdown dropdown-right">
+                <label tabindex="0" class="btn m-1">Details</label>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <div class="w-96 card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Red Dragon</p>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                            <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
+                            <path d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z" fill="#FBC0A8"/>
+                            <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                            <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                            <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                            <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                          </svg>
+                      </div>
+                      <div class="flex gap-6">
+                        <button class="border border-solid border-[#F85559] py-2 px-6 rounded-md">Close</button>
+                        <button class="bg-[#F85559] py-2 px-6 rounded-md">Buy Now</button>
+                      </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
             </div>
           </div>
         </div>
@@ -149,7 +230,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">12.90$ - 18.85$</h2>
-            <p>Apples</p>
+            <p>Banana</p>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
                   <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
@@ -161,14 +242,44 @@
                 </svg>
             </div>
             <div class="card-actions">
-             <a href="Details">Details</a>
+              <div class="dropdown dropdown-right">
+                <label tabindex="0" class="btn m-1">Details</label>
+                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                  <div class="w-96 card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <p>Banana</p>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                            <path d="M45.8527 0L50.4015 7.00591L58.4702 9.16716L53.2129 15.6584L53.6507 24L45.8527 21.0059L38.0546 24L38.4925 15.6584L33.2351 9.16716L41.3038 7.00591L45.8527 0Z" fill="#F85559"/>
+                            <path d="M45.9037 0L50.4526 7.00591L58.5213 9.16716L53.264 15.6584L53.7018 24L45.9037 21.0059V0Z" fill="#FBC0A8"/>
+                            <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                            <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                            <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                            <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                          </svg>
+                      </div>
+                      <div class="flex gap-6">
+                        <button class="border border-solid border-[#F85559] py-2 px-6 rounded-md">Close</button>
+                        <button class="bg-[#F85559] py-2 px-6 rounded-md">Buy Now</button>
+                      </div>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+          </div>
+        </div>
       </section>
+     <div class="text-center py-24 mt-10">
+      <button class="btn btn-success bg-[#F85559] text-[#FFFFFF]">Shop All</button>
+     </div>
     </main>
     </div>
-      <footer class="footer footer-center p-10 bg-[#121212] text-primary-content">
+      <footer class="footer footer-center bg-[#121212] text-primary-content py-32">
         <div>
          <h2 class="text-4xl font-bold">Fruit Burst</h2>
         </div> 
